@@ -8,12 +8,14 @@ class Solution {
         
         if(returned[2] < due[2]){
             Console.WriteLine("0");
-        }else if(returned[0]<= due[0] && returned[1] <= due[1] && returned[2] == due[2]){
-            Console.WriteLine("0");
-        }else if(returned[0] > due[0] && returned[1] == due[1] && returned[2] == due[2]){
-            Console.WriteLine("{0}", 15 * (returned[0] - due[0]));
-        }else if(returned[1] > due[1] && returned[2] == due[2]){
-            Console.WriteLine("{0}", 500 * (returned[1] - due[1]));
+        }else if(returned[2] == due[2]){
+            if(returned[0]<= due[0] && returned[1] <= due[1]){
+                Console.WriteLine("0");
+            }else if(returned[0] > due[0] && returned[1] == due[1]){
+                Console.WriteLine("{0}", 15 * (returned[0] - due[0]));
+            }else{
+                Console.WriteLine("{0}", 500 * (returned[1] - due[1]));
+            }
         }else{
             Console.WriteLine("10000");
         }
