@@ -19,9 +19,9 @@ public class Solution {
         /* Print the sum of both integer variables on a new line. */
         System.out.println(i + a);
         /* Print the sum of the double variables on a new line. */
-		System.out.println(d + b);
+	System.out.println(d + b);
         /* Concatenate and print the String variables on a new line; 
-        	the 's' variable above should be printed first. */
+        the 's' variable above should be printed first. */
         System.out.println(s + c);
         scan.close();
     }
