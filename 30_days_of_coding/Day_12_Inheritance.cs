@@ -27,12 +27,17 @@ class Student : Person{
     *   scores - An array of integers denoting the Person's test scores.
     */
     // Write your constructor here
-    public Student(string firstName, string lastName, int id, int[] scores){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.id = id;
+    //public Student(string firstName, string lastName, int id, int[] scores){
+    //    this.firstName = firstName;
+    //    this.lastName = lastName;
+    //    this.id = id;
+    //    this.testScores = scores;
+    //}
+    
+    public Student(string firstName, string lastName, int id, int[] scores) : base(firstName, lastName, id){
         this.testScores = scores;
     }
+	
     /*	
     *   Method Name: Calculate
     *   Return: A character denoting the grade.
