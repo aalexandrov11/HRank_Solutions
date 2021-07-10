@@ -53,5 +53,6 @@ public static Node insert(Node root,int data){
                 root=insert(root,data);
             }
             levelOrder(root);
-        }	
+            sc.close();
+        }
 }
