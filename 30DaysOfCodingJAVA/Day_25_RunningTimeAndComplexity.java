@@ -27,5 +27,6 @@ public class Solution {
             int n = Integer.parseInt(scan.nextLine());
             isPrime(n);
         }
+        scan.close();
     }
 }
